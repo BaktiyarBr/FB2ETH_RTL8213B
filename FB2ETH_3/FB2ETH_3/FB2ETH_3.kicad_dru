@@ -1,0 +1,16 @@
+(version 1)
+
+# Via to pad copper clearance (different nets)
+(rule "Via to pad"
+  (constraint clearance (min 0.15mm))
+  (condition "A.Type == 'Via' && B.Type == 'Pad'"))
+
+# Different nets: normal copper clearance
+(rule "Via to via, different nets"
+  (constraint clearance (min 0.15mm))
+  (condition "A.Type == 'Via' && B.Type == 'Via' && A.NetName != B.NetName"))
+
+# Same net: physical spacing (applies regardless of net)
+(rule "Via to via, same net"
+  (constraint physical_clearance (min 0.1mm))
+  (condition "A.Type == 'Via' && B.Type == 'Via' && A.NetName == B.NetName"))

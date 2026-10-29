@@ -1,0 +1,4 @@
+(fp_lib_table
+	(version 7)
+	(lib (name "projectLibs") (type "KiCad") (uri "C:/Users/bnarb/OneDrive/Documents/ProjectsFolder/FB2ETH_for_openipc/projectLibs.pretty") (options "") (descr ""))
+)

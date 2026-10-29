@@ -1,0 +1,4 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "ProPrj_Ope-easyedapro") (type "KiCad") (uri "${KIPRJMOD}/ProPrj_Ope-easyedapro.kicad_sym") (options "") (descr ""))
+)
